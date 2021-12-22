@@ -1,0 +1,6 @@
+@prefix ab: <http://learningsparql.com/ns/addressbook#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ab:Musician a rdfs:Class ;
+    rdfs:label "Musician" .
+

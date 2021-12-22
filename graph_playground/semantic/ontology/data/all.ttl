@@ -1,0 +1,31 @@
+@prefix ab:   <http://learningsparql.com/ns/addressbook#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ab:Musician
+      rdf:type rdfs:Class ;
+      rdfs:label "Musician" ;
+      rdfs:comment "Someone who plays a musical instrument" .
+
+ab:MusicalInstrument
+      a rdfs:Class ;
+      rdfs:label "musical instrument" .
+
+
+ab:playsInstrument
+      rdf:type rdf:Property ;
+      rdfs:comment "Identifies the instrument that someone plays" ;
+      rdfs:label "plays instrument" ;
+      rdfs:domain ab:Musician ;
+      rdfs:range ab:MusicalInstrument .
+
+
+ab:Richard ab:firstName     "Richard" ;
+        ab:lastName       "Mutt" ;
+        ab:postalCode     "49345" ;
+        ab:city           "Springfield" ;
+        ab:homeTel        "(229) 276-5135" ;
+        ab:streetAddress  "32 Main St." ;
+        ab:region         "Connecticut" ;
+        ab:email          "richard49@hotmail.com" ;
+        ab:playsInstrument ab:vacuumCleaner .
