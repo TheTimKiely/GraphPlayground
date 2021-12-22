@@ -1,0 +1,8 @@
+prefix ab:   <http://learningsparql.com/ns/addressbook#> 
+
+select ?s ?p ?o
+where
+{
+    ?s ?p ?o .
+    ?s a ab:Musician .
+}
